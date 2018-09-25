@@ -13,7 +13,7 @@
 ## import variables 
 . ./_variables.sh;
 export CONTENT_FILE="./_hosts_block";
-export STATUS="[${red}BLOCKED ${reset}]";
+export STATUS="BLOCKED";
 . ./_worker.sh;
 
 

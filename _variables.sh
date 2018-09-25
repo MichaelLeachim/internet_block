@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export REDIRECT_TO="127.0.0.1:9999"
+export REDIRECT_TO="127.0.0.0"
 export HOSTS="/etc/hosts"
 export STATUS_FILE="./_status"
 
