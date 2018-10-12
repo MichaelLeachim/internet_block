@@ -12,8 +12,8 @@
 
 cd $(dirname "$0"); # cd to script dir
 ## import variables
-. ./_variables.sh;
-export CONTENT_FILE="./_hosts_block";
+. ./_conf.sh;
+export CONTENT_FILE="./_hosts_block.gpg";
 export STATUS="BLOCKED";
 . ./_worker.sh;
 cd -;

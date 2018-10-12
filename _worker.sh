@@ -15,9 +15,13 @@ fi
 
 ## write to $HOSTS file
 echo "Writing $CONTENT_FILE to $HOSTS"
-cat $CONTENT_FILE | envsubst  > $HOSTS;
+gpg --output - --decrypt --batch --passphrase $PASSWORD $CONTENT_FILE  | envsubst  > $HOSTS;
 echo "Changing status to: $STATUS"
 echo $STATUS > $STATUS_FILE;
+echo "Setting timestamp: " $TIMESTAMP
+echo $TIMESTAMP "[" $STATUS "]" >> $TIMELOG_FILE
+
+
 
 
 
