@@ -9,6 +9,7 @@
 
 # Ths script *will* overwrite /etc/hosts file. Backup it if you have one.
 
+
 ## import variables 
 . ./_variables.sh;
 export CONTENT_FILE="./_hosts_allow";

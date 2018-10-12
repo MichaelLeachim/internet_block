@@ -10,11 +10,13 @@
 
 # Ths script *will* overwrite /etc/hosts file. Backup it if you have one.
 
-## import variables 
+cd $(dirname "$0"); # cd to script dir
+## import variables
 . ./_variables.sh;
 export CONTENT_FILE="./_hosts_block";
 export STATUS="BLOCKED";
 . ./_worker.sh;
+cd -;
 
 
 
