@@ -22,16 +22,12 @@ Block/allow file should look like this:
 ## hacker news
 
 $REDIRECT_TO news.ycombinator.com
-$REDIRECT_TO www.news.ycombinator.com
 $REDIRECT_TO indiehackers.com
-$REDIRECT_TO www.indiehackers.com
 
 ## reddit
 
 $REDIRECT_TO reddit.com
-$REDIRECT_TO www.reddit.com
 $REDIRECT_TO old.reddit.com
-$REDIRECT_TO www.old.reddit.com
 ```
 
 
