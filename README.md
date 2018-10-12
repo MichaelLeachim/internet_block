@@ -17,6 +17,25 @@ and set up password for `_hosts_block.gpg` and `_hosts_allow.gpg` files there.
 Then you should write hosts that you are going to block in `_hosts_block.gpg`
 and write hosts that you are going to allow in `_hosts_allow.gpg` 
 and then encrypt them with **symmetric cipher**. 
+Block/allow file should look like this:
+```
+## hacker news
+
+$REDIRECT_TO news.ycombinator.com
+$REDIRECT_TO www.news.ycombinator.com
+$REDIRECT_TO indiehackers.com
+$REDIRECT_TO www.indiehackers.com
+
+## reddit
+
+$REDIRECT_TO reddit.com
+$REDIRECT_TO www.reddit.com
+$REDIRECT_TO old.reddit.com
+$REDIRECT_TO www.old.reddit.com
+```
+
+
+
 
 ## Second step, is to bind block.sh to a keybinding
 
